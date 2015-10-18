@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self 
+ */
+
+ body {
+ 	font-family: 'Abel', sans-serif;
+ 	background: #F4F4F4;
+}
+
+.wrapper {
+	width: 60%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.main_header {
+	width: 100%;
+	margin: 0 auto;
+	background: lightgrey ;
+	#logo {
+		float: left;
+		p {
+		text-transform: lowercase;
+    	font-weight: 500;
+    	letter-spacing: -.5px;
+    	font-size: 1.5rem;
+		}
+	}
+	#buttons {
+		float: right;
+		a {
+		line-height: 89px;
+    	background: cadetblue;
+    	border-radius: .2em;
+    	color: whitesmoke;
+    	padding: .5em;
+    	font-size: 1.4rem;
+    	font-weight: 200;
+		}
+	}
+}
+
+#posts {
+	padding: 1em 5%;
+	border-radius: .5em;
+	.post{
+		margin: 1em 0;
+    	padding: 1.5em 0;
+    	border-bottom: 1px solid LIGHTGREY;
+		.title{
+			margin: 0;
+		  a {
+		  	color: cadetblue;
+    		font-weight: 300;
+    		font-size: 1.35rem;
+		  }	
+		}
+		.date{
+			margin-top: .1rem;
+            font-size: .82rem;
+		}
+	}
+}
