@@ -40,11 +40,15 @@
 	background: lightgrey ;
 	#logo {
 		float: left;
-		p {
+		a {
 		text-transform: lowercase;
     	font-weight: 500;
     	letter-spacing: -.5px;
-    	font-size: 1.5rem;
+    	font-size: 1.9rem;
+    	text-decoration: none;
+    	color: cadetblue;
+    	line-height: 55px;
+
 		}
 	}
 	#buttons {
