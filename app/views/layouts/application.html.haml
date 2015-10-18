@@ -4,14 +4,15 @@
   %title Tomega Career Forum
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   %link{ rel: "stylesheet", href: 'https://fonts.googleapis.com/css?family=Abel', type: "text/css"}
-  %link{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"}/
-  = javascript_include_tag 'default', 'data-turbolinks-track' => true
+  %link{ rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"}
   = csrf_meta_tags
+  = javascript_include_tag "/app/assets/javascripts/application.js", 'data-turbolinks-track' => true
+  
 %body
   %header.main_header.clearfix
     .wrapper
       #logo
-        %p Tomega Career Forum
+        %p Tomega Career Forums
       #buttons
         = link_to "New Post", new_post_path
 
