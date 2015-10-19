@@ -99,6 +99,27 @@
 		font-size: 0.92rem;
 		font-weight: 200;
 		line-height: 1.1;
-
+	}
+	#comments {
+		.comment {
+			border-bottom: 1px solid lightgrey;
+			padding-bottom: 1em;
+			margin-bottom: 2em;
+			.comment_content {
+				margin:0;
+			}
+			.comment_author {
+				margin-top: 0;
+				font-size: .65rem;
+				font-weight: 800;
+			}
+			a {
+				font-size: small;
+			}
+			.button_to {
+				font-size: .7rem;
+				margin: 0;
+			}
+		}
 	}
 }
