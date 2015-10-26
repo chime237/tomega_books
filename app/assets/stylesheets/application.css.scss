@@ -101,10 +101,23 @@
 		line-height: 1.1;
 	}
 	#comments {
+
+		h2 {
+			font-size: small;
+			width: 4em
+		}
 		.comment {
 			border-bottom: 1px solid lightgrey;
 			padding-bottom: 1em;
 			margin-bottom: 2em;
+			.content {
+			  width: 80%;
+			  float: right;
+			}
+			.buttons {
+			width: 10%;
+			float: right;
+			}
 			.comment_content {
 				margin:0;
 			}
@@ -114,11 +127,16 @@
 				font-weight: 800;
 			}
 			a {
+				padding-left: 3em;
+				padding-right:1em;
+				float: left;
 				font-size: small;
 			}
 			.button_to {
 				font-size: .7rem;
 				margin: 0;
+				padding-right: 1em;
+				padding-left: 3em;
 			}
 		}
 	}
